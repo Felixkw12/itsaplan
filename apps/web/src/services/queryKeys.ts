@@ -278,12 +278,16 @@ export const qk = {
   notificationsUnreadTotal: ['notificationsUnreadTotal'] as const,
   // The signed-in user's WebAuthn passkeys (account security page).
   passkeys: ['passkeys'] as const,
+  // The OAuth applications the signed-in user authorized (account security page).
+  connectedApps: ['connectedApps'] as const,
   // The signed-in user's connected external accounts (accounts page): the linked
   // Telegram account, and the auth providers better-auth reports.
   telegramAccount: ['telegramAccount'] as const,
   linkedAccounts: ['linkedAccounts'] as const,
   // The instance sign-in policy, including which social providers are configured.
   authConfig: ['authConfig'] as const,
+  // The name an MCP client registered with, shown on the OAuth consent page.
+  oauthClientName: (clientId: string) => ['oauthClientName', clientId] as const,
   // The signed-in user's personal API keys (API keys page).
   apiKeys: ['apiKeys'] as const,
   // The signed-in user's interface preferences (timezone, theme, issue open mode,
