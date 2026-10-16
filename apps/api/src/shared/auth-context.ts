@@ -61,6 +61,6 @@ export const authContext = new Elysia({ name: 'auth-context' }).resolve(
 // has it on its next request instead of its next sign-in.
 async function signedIn(user: SessionUser): Promise<SessionUser> {
   if (isAccountDeactivated(user)) throw new HttpError(401, 'This account is deactivated');
-  await ensurePersonalWorkspace(user.id);
+  await ensurePersonalWorkspace(user);
   return user;
 }
