@@ -235,7 +235,7 @@ export async function createScimUser(
   if (!(await isScimEmailAllowed(workspaceId, email))) {
     throw new ScimError(
       400,
-      `The address '${input.email}' is not in a domain of this workspace`,
+      `The address '${input.email}' is not in an allowed domain`,
       'invalidValue',
     );
   }
