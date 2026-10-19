@@ -40,7 +40,8 @@ Next.js App Router, SSR (not SPA). Tailwind v4 + shadcn/ui. See root `AGENTS.md`
   `WorkspaceScimSection` through `useWorkspaceSections`. `SignInExtras` sits among the sign-in methods, after the
   instance's own provider, on the sign-in screen and on the invite screen, where it gets the
   invited address as `email`; here it adds nothing, while the hosted build offers a sign-in
-  through providers of its own. A sign-in that comes back with a code the core does not
+  through providers of its own. `SignInPage` is what `/login/<name>` shows, a sign-in page under a
+  name of its own; here every name answers 404. A sign-in that comes back with a code the core does not
   know shows the text the build's messages give it under `auth.errors.codes.<code>`.
   `GodSectionExtras` renders at the end of every god section page, by its slug, for settings the hosted build adds to an existing section; `WorkspaceSectionExtras`
   does the same on a workspace's own settings pages (`general`, `managers`), with the
