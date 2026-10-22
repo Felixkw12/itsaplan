@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.7.1](https://github.com/croffasia/itsaplan/compare/v1.7.0...v1.7.1) (2026-10-22)
+
+
+### Bug Fixes
+
+* **web:** update Next.js to 16.4.2 to close two security advisories ([#673](https://github.com/croffasia/itsaplan/issues/673)) ([8dbb687](https://github.com/croffasia/itsaplan/commit/8dbb68786f9d96c91726b4950e1c3202f001c44e))
+
+
+### Documentation
+
+* trim AGENTS.md to core agent rules and add the security-audit skill ([#670](https://github.com/croffasia/itsaplan/issues/670)) ([99e71e2](https://github.com/croffasia/itsaplan/commit/99e71e2ed0cbcdd72ad0ae21a65176956e6bf6f7))
+
+
+### Chores
+
+* **web:** add a slot for a screen after sign-in ([#672](https://github.com/croffasia/itsaplan/issues/672)) ([8c4b644](https://github.com/croffasia/itsaplan/commit/8c4b64473fcbc5d72baa41bb4195445e9a78336f))
+
 ## [1.7.0](https://github.com/croffasia/itsaplan/compare/v1.6.0...v1.7.0) (2026-10-22)
 
 
